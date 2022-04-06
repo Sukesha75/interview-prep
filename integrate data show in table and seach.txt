@@ -1,0 +1,32 @@
+import React from 'react';
+import { useState, useEffect } from 'react';
+
+export default function Table() {
+  const [data, setData] = useState(null);
+
+  useEffect(() => {
+    fetch('https://jsonplaceholder.typicode.com/users')
+      .then((res) => res.json())
+      .then((datas) => setData(datas));
+  }, []);
+
+  if (data !== null) {
+    console.log('data', Object.keys(Object.assign({}, ...data)));
+    var header = Object.keys(Object.assign({}, ...data));
+    let s = data.map((i) => i.name);
+    console.log('s', s);
+
+    let f = data.forEach((x) => console.log(x.value));
+  }
+
+  return (
+    <div>
+      <table>
+        <tr>{data != null ? header.map((i) => <th>{i}</th>) : ''}</tr>
+        <tr>
+          <th></th>
+        </tr>
+      </table>
+    </div>
+  );
+}

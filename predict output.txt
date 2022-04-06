@@ -1,0 +1,68 @@
+const arr = [10, 12, 15, 21];
+for (var i = 0; i < arr.length; i++) {
+setTimeout(function() {
+console.log('Index: ' + i + ', element: ' + arr[i]);
+}, 3000);
+}
+
+console.log(filterNonUnique(['a', 'c', 'b', 'd', 'c', 'b', 'e'])); // ["a", "d", "e"]
+console.log(filterNonUnique(['a', 'c', 'b', 'd'])); // ["a", "c", "b", "d"]
+
+
+
+
+function filterNonUnique(arr){
+let obj ={},result=[];
+for (let i = 0;i<arr.length;i++){
+if (obj[arr[i]]) obj[arr[i]] = obj[arr[i]] + 1;
+else obj[arr[i]] = 1;
+}
+Object.keys(obj).map((item,index)=>{
+if (obj[item] == 1) result.push(item);
+})
+return result;
+}
+
+
+
+
+Panel 25:26 PM
+
+
+
+
+var x = 21;
+var test = function () {
+console.log(x);
+var x = 20;
+};
+test ();
+Panel 25:29 PM
+
+
+
+
+function foo() {
+let a = b = 0;
+a++;
+return a;
+}
+
+
+
+foo();
+console.log(typeof a);
+console.log(typeof b);
+Panel 25:32 PM
+
+
+
+
+var Employee = {
+company: 'xyz'
+}
+var emp1 = Object.create(Employee);
+delete emp1.company
+console.log(emp1.company);
+Panel 25:34 PM
+https://jsbin.com/?js,console

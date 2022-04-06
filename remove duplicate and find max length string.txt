@@ -1,0 +1,13 @@
+let strings = ["willy", "wonka", "willy", "wonka",
+  "willy", "wiily", "wlily", "wonka", "aaa"
+];
+
+let op=[];
+for(let i=0;i<strings.length;i++){
+  if(indexOf(op[strings[i]])==-1){
+     op.push(string[i]);
+   }
+ }
+ 
+op=["willy","wiily", "wonka","aaa"];
+ 

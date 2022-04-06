@@ -1,0 +1,26 @@
+const arr = [
+  {
+    amount: 10,
+    unit: 'kg',
+  },
+  {
+    amount: 60,
+    unit: 'lb',
+  },
+  {
+    amount: 200,
+    unit: 'g',
+  },
+]
+
+let arr1=arr.map(i=>i.amount);
+console.log(arr1)
+
+function sum(array){
+   let sum=0;
+   for(let i=0;i<array.length;i++){
+      sum=sum+array[i];
+   }
+   return sum;
+}
+console.log(sum(arr1))

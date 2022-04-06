@@ -1,0 +1,51 @@
+link for mock up screen practise-
+                    https://www.behance.net/challenge/xd?register=true
+                    https://www.geeksforgeeks.org/paytm-interview-preparation/
+                    https://www.figma.com/file/kdRxYeI2IiwoKzYIjTlFG3/Card?node-id=4%3A0
+                    https://codesandbox.io/s/new-thunder-8qsoxv?file=/src/Button.js
+                    https://codesandbox.io/s/github/davehowson/react-image-carousel
+                    https://www.fullstack.cafe/blog/javascript-code-interview-
+                     https://www.codewars.com/kata/514b92a657cdc65150000006/train/javascript 
+                     ans-function myLanguages(arr) {
+                     let arr1 = Object.values(arr).sort().reverse();
+                     let arr4 = Object.keys(arr);
+                     let arr3 = [];
+                     arr1.map((item,i)=>{
+                       arr4.map((item1,j)=>{
+                        if (arr[item1] == item && item >= 60){
+                           arr3.push(item1);
+                         }
+                      })
+                     })
+                     return arr3;
+                     }
+
+interview Prepration Link-
+                    https://jsvault.com/
+                    https://www.fullstack.cafe/blog/javascript-code-interview-
+                    https://leetcode.com/discuss/interview-question/1074798/frontend-interview-preparation-resources-1-4-years-exp
+                    https://www.frontendinterviewhandbook.com/introduction
+                    https://medium.com/@danduan/preparing-for-the-frontend-interview-in-50-hours-5b972d43a07c
+                    https://www.codingninjas.com/codestudio/problems
+                    https://www.codingninjas.com/codestudio/problems
+                    https://jsvault.com/
+                    https://www.youtube.com/watch?v=9boMnm5X9ak&list=PLC3y8-rFHvwheJHvseC3I0HuYI2f46o
+                    https://www.behance.net/challenge/xd
+                    https://react-redux.js.org/api/hooks
+                    https://www.codewars.com/kata/514b92a657cdc65150000006/train/javascript
+                    https://github.com/pkumar11/reactjs-interview-questions#what-is-strict-mode-in-react
+                    https://www.edureka.co/blog/interview-questions/react-interview-question
+                    https://www.toptal.com/javascript/interview-questions
+                    https://www.freecodecamp.org/news/the-react-handbook-b71c27b0a795/
+                    https://www.educative.io/blog/javascript-data-structures
+                    https://www.fullstack.cafe/blog/react-js-interview-questions
+                    https://www.fullstack.cafe/blog/javascript-code-interview-
+questions-
+              - Debouncing implementation
+              - Object . access
+              - email split and sort sukesha@google.com pankaj@bentley.com
+              - Array flat ployfill
+              - React table
+              - HTML example
+
+

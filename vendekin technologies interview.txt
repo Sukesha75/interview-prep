@@ -1,0 +1,121 @@
+Zeeshan Danish4:19 PM
+for (var i = 0; i < 3; i++) {
+setTimeout(function() { alert(i); }, 1000 + i);
+}
+Zeeshan Danish4:20 PM
+const b = {
+a: 10
+}
+
+
+
+const test = (z) => {
+z.a = 1;
+}
+
+
+
+test(b);
+
+
+
+console.log(b);
+
+
+
+Zeeshan Danish4:22 PM
+const b = 10
+
+
+
+const test = (a) => {
+a = 1;
+}
+
+
+
+test(b);
+
+
+
+console.log(b);
+
+
+
+Zeeshan Danish4:23 PM
+const waitFunction = (data) => {
+return new Promise((resolve)=>{
+setTimeout(() => {
+console.log(data);
+resolve(true);
+}, 2000);
+})
+}
+
+
+
+const processingArray = ["1","2","3","4","5"];
+
+
+
+processingArray.forEach(async (data)=>{
+await waitFunction(data);
+});
+Zeeshan Danish4:27 PM
+
+
+
+const waitFunction = () => {
+return new Promise((resolve)=>{
+console.log("step-1")
+setTimeout(() => {
+console.log("step-2")
+resolve(true);
+}, 2000);
+})
+}
+
+
+
+const runner = async () => {
+console.log("step-0")
+waitFunction();
+console.log("step-3")
+}
+
+
+
+runner();
+console.log("step-4")
+
+
+
+You4:31 PM
+let arr=[1,2,3]
+var arr2=arr;
+arr=[];
+You4:33 PM
+const index=arr.indexOf(3)
+if(index>-1){
+arr.splice(index,1)
+}console.log(arr)
+L1- Interview CS Engg
+
+
+
+
+event.setCallback((value)=>{
+return new Promise((resolve)=> {
+setTimeout(() => {
+console.log("yes done", value)
+resolve()
+}, Math.random());
+})
+})
+
+
+
+
+[...Array(3)].forEach((i, index)=>{
+event.emit(index);
+});

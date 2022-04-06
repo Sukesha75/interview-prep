@@ -1,0 +1,5 @@
+1.integrate api show in table
+2.stop counter show counter after every second
+3.show current date and time
+4.to-do list
+5.create input enter any number store it into array and and then remove duplicates

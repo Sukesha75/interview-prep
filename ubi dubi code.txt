@@ -1,0 +1,47 @@
+// As a user I can enter a phrase "hello" and see it translated to Ubbi Dubbi “hubellubo”
+// As a user I can enter a phrase "world" and see it translated to Ubbi Dubbi "wuborld"
+// As a user I can enter a phrase "hello world" and see it translated to Ubbi Dubbi "hubellubo wuborld" 
+// As a user I can enter a phrase "eat apples" and see it translated to Ubbi Dubbi "eubatub applubesub"
+
+ function ubbi(str){
+   
+   let vovel=['a','e','i','o','u'];
+   
+   let op=[];
+   let joinedvriable;
+   
+   let  s=str.split('');
+   
+   var y=false;
+   
+  //var filteredArr = s.filter(function(item, index) {
+  //if (vovel.indexOf(item) == index)
+   // return item;
+  // });
+ 
+//console.log(filteredArr);
+   
+   for(let i=0;i<s.length;i++){
+     if(s[i]=='a'||s[i]=='e'||s[i]=='o'||s[i]=='u'){
+       if(i == 0) {
+         y=true;
+         op.push(s[i]);
+       }
+       else
+        op.push('ub'+s[i]);
+       //else 
+        
+     }
+     else{
+      op.push(s[i])
+     }
+   joinedvriable = op.join('');
+     console.log(joinedvriable)
+   }
+   if(y) {
+     joinedvriable+= 'ub'
+     console.log(joinedvriable)
+   }
+ }
+
+ubbi('eat');

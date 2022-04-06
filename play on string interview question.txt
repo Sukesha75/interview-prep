@@ -1,0 +1,21 @@
+let ip="E0:B0:T0"
+ //op ="00:B0:00"
+ 
+let mapper={E:0,T:0,B:1}
+
+
+let split=ip.split('');
+
+let finaldata= split.map(i=>{
+                if(mapper.hasOwnProperty(i))
+                {
+                return mapper[i]
+                }
+                return i})
+
+console.log(finaldata.join(''))
+
+
+                        //if (item.plat && item.plat !== "") {
+						
+						parseInt(abElevation[e.target.selectedIndex].plat.substr(abElevation[e.target.selectedIndex].plat.length-1)) - 1

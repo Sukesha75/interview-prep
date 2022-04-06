@@ -1,0 +1,85 @@
+/*JOSH*/
+ let s= [
+   { type: 'Movie', name: 'M1'},
+   { type: 'TV Show', name: 'TS1'},
+  { type: 'Movie', name: 'M2'},
+   { type: 'TV Show', name: 'TS2'},
+ ]
+ 
+let u= {
+   'Movie': [
+     { type: 'Movie', name: 'M1'},
+     { type: 'Movie', name: 'M2'},
+   ],
+   'TV Show': [
+     { type: 'TV Show', name: 'TS1'},
+    { type: 'TV Show', name: 'TS2'},
+   ]
+ }
+ 
+
+ 
+
+
+//map[s[i]]
+
+let map={}
+
+for(let i=0;i<s.length;i++){
+  // console.log(s[i].type)
+  let p=s[i].type
+  if(p)
+  {
+   
+  }
+  else{
+    map[p]=[s[i]] 
+  }
+
+}
+
+
+                                    
+
+
+                                 /let arr=[1,2,3,4];
+
+//let final=arr.splice(1,2);
+//console.log(final)
+
+//let s={age:10,range:100}
+
+const age({...age},range:10000)=age;
+
+
+let ss={name:'sukesha'};
+
+const name='ssss';
+
+
+const arr = [
+  {
+    amount: 10,
+    unit: 'kg',
+  },
+  {
+    amount: 60,
+    unit: 'lb',
+  },
+  {
+    amount: 200,
+    unit: 'g',
+  },
+]
+
+let arr1=arr.map(i=>i.amount);
+console.log(arr1)
+
+function sum(array){
+   let sum=0;
+   for(let i=0;i<array.length;i++){
+      sum=sum+array[i];
+   }
+   return sum;
+}
+console.log(sum(arr1))
