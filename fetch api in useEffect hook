@@ -1,0 +1,32 @@
+import "./styles.css";
+import { useEffect, useState } from "react";
+
+export default function App() {
+  const [data, setData] = useState([]);
+
+  useEffect(() => {
+    fetch("https://api.github.com/users")
+      .then((response) => response.json())
+      .then(setData);
+  }, []);
+
+  if (data) {
+    return (
+      <div className="App">
+        <h1>Hello CodeSandbox</h1>
+        <ul>
+          {data.map((user) => (
+            <li key={user.id}>{user.login}</li>
+          ))}
+        </ul>
+        <button
+          onClick={() => {
+            setData([]);
+          }}
+        >
+          Remove Data
+        </button>
+      </div>
+    );
+  }
+}
