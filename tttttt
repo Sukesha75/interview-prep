@@ -1,0 +1,21 @@
+ const str = "hello";
+ let resultChar = "";
+ let maxCount = 1;
+ const obj = {}; //Create an Object to store all the characters.
+
+ for (let char of str) {
+  console.log(char)
+ if (obj[char]) {
+
+ obj[char] += 1; //Add the count of the character if already exists, else initialize count to 1.
+
+ if (obj[char] > maxCount) {//Compare each character count to the current maximum occurrence.
+
+ maxCount = obj[char];
+ resultChar = char;
+ }
+ } else {
+ obj[char] = 1;
+ }
+ }
+  console.log('resultChar',resultChar)
