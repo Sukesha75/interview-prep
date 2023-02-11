@@ -1,0 +1,48 @@
+let array=[10,20,30,2,4,9]
+array.push(99)
+console.log(Math.min.apply(Math,array))
+console.log(array)
+
+function x(){
+    setTimeout(function(){
+        console.log(i);
+    },1000);
+        var i=1;
+
+}
+x();
+
+
+let sum= function(a){
+	return function(b){
+  	if(b){
+      	return sum(a+b);
+    }
+    return a;
+  }
+}
+console.log(sum(2)(3)(4)(6)())
+
+let summ = a=> b=> b ? summ(a+b) : a
+console.log(summ(2)(3)(4)(5)())
+
+
+
+
+let a=null
+let bab =undefined
+
+console.log(bab===a)
+
+
+
+
+
+
+
+const number='098765433335612'
+
+const last=number.slice(-4)
+
+const res=last.padStart(number.length,'*')
+console.log(res)
