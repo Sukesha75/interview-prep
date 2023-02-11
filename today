@@ -1,0 +1,50 @@
+let arrayIntegersOriginal1 = [1, 2, 3, 4, 5];
+
+
+let arrayIntegers1 = arrayIntegersOriginal1.splice(0, 2); // returns [1, 2]; original array: [3, 4, 5]
+console.log(arrayIntegersOriginal1)
+
+
+
+const str='hello'
+let resultchar=''
+let maxcount=1;
+let obj={}
+
+for(let char of str){
+ if(obj[char]){
+ 
+ 	obj[char]+=1;
+  
+  if(obj[char]>maxcount){
+   maxcount=obj[char]
+   resultchar=char
+  }
+ }else{
+ obj[char]=1;
+ }
+}
+  console.log('resultChar',resultchar)
+  
+  
+  let strings = ["willy", "wonkaaa", "willy", "wonka",
+  "willy", "wiily", "wlily", "wonka", "aaa"
+];
+
+let op=[];
+for(let i=0;i<strings.length;i++){
+  if(op.indexOf(strings[i])==-1){
+     op.push(strings[i]);
+   }
+ }
+console.log(op)
+const longeststring = (args)=>{
+  let longest='';
+  for(let arg of args){
+   arg.length>longest.length?(longest=arg):longest
+  }
+  return longest;
+}
+console.log(longeststring(op))
+  
+  
