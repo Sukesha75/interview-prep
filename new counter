@@ -1,0 +1,25 @@
+import "./styles.css";
+import { useState, useEffect } from "react";
+import React from "react";
+
+export default function App() {
+  const [counter, setCounter] = useState(0);
+
+  useEffect(() => {
+    if (counter < 10) {
+      var interval = setTimeout(() => {
+        setCounter((counter) => counter + 1);
+      }, 1000);
+    } else {
+      return () => {
+        clearTimeout(interval);
+      };
+    }
+  }, [counter]);
+
+  return (
+    <div className="App">
+      <h1>{counter}</h1>
+    </div>
+  );
+}
