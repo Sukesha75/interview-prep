@@ -5,13 +5,13 @@ import React from "react";
 export default function App() {
   const [counter, setCounter] = useState(0);
   useEffect(() => {
-    if (counter < 0) {
-      var interval = setInterval(() => {
+    if (counter < 5) {
+      var interval = setTimeout(() => {
         setCounter((counter) => counter + 1);
       }, 1000);
     } else {
       return () => {
-        clearInterval(interval);
+        clearTimeout(interval);
       };
     }
   }, [counter]);
@@ -19,35 +19,6 @@ export default function App() {
   return (
     <div className="App">
       <h1>{counter}</h1>
-    </div>
-  );
-}
-
-
-
-
-
-
-
-
-import "./styles.css";
-import {useState,useEffect} from 'react';
-import React from 'react';
-
-export default function App() {
-  const [counter,setCounter] =useState(0);
-  useEffect(()=>{
-    const interval= setInterval(()=>{
-      setCounter(counter=>counter+1)
-    },1000);
-
-    return()=>{clearInterval(interval)};
-  },[])
-
-  return (
-    <div className="App">
-      <h1>{counter}</h1>
-      <h2>Start editing to see some magic happen!</h2>
     </div>
   );
 }
