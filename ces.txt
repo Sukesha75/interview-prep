@@ -16,8 +16,24 @@ var obj = {
     }
 };
 
-const findPath = (object, path) => {
-    
+
+Program------------------------------
+var obj = {
+    a: {
+        b: {
+            c: 12,
+            j: false
+        },
+        k: null
+    }
+};
+
+function hasPropertyByString(obj, s) {
+  return s.split('.').every(function(key){
+     var result = obj.hasOwnProperty(key);
+     if (obj) obj = obj[key];
+     return  result;
+  });
 };
 
 
