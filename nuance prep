@@ -48,4 +48,6 @@ const shrink=user.reduce(function(acc,curr){
 console.log('shrink',shrink)
 
 const output=user.filter(x=>x.age<30)
+const output=user.filter(x=>x.age<30).map(x=>x.firstName)
+
 console.log(output)
