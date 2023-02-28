@@ -1,0 +1,51 @@
+let arr=[10,20,30,999,40,50,90];
+
+const red= arr.reduce(function(acc,curr){
+ acc=acc+curr;
+ return acc;
+},0)
+
+console.log(red)
+
+
+const maxi=arr.reduce(function(max,curr){
+ if(curr>max){
+  max=curr;
+ }
+ return max;
+},0)
+
+console.log(maxi)
+
+
+
+
+const user=[
+{
+firstName:'Sukesha',lastName:'Shinde',age:25
+},
+{
+firstName:'Paresh',lastName:'Patil',age:27
+},
+{
+firstName:'rrrrr',lastName:'Shinde',age:50
+},
+{
+firstName:'Ssss',lastName:'Shinde',age:25
+}
+]
+
+const shrink=user.reduce(function(acc,curr){
+	if(acc[curr.age]){
+  	acc[curr.age]=++acc[curr.age];
+  }
+  else{
+  	acc[curr.age]=1
+  }
+  return acc;
+},{})
+
+console.log('shrink',shrink)
+
+const output=user.filter(x=>x.age<30)
+console.log(output)
