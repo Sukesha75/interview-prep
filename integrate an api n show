@@ -25,3 +25,25 @@ export default function App() {
     </div>
   );
 }
+
+
+------------csss of it-----------------------
+.App {
+  font-family: sans-serif;
+  text-align: center;
+}
+.card {
+  background-color: white;
+
+  /* Add border */
+  border: 1px solid #bacdd8;
+
+  /* Add space between the border and the content */
+  padding: 8px;
+
+  border-radius: 12px;
+
+  width: 20%;
+  display: inline-block;
+  margin: 0px 0px 10px 10px;
+}
