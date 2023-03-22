@@ -1,0 +1,46 @@
+//Shallow copy
+
+
+/*let originalvalue={name:'sukesha',age:30}
+
+let copiedvalue=originalvalue;
+
+console.log(originalvalue)
+console.log(copiedvalue)
+
+copiedvalue.name='peter'
+
+console.log(originalvalue)
+console.log(copiedvalue)*/
+
+
+//Deep Copy
+
+let originalvalue={
+  name:'sukesha',
+  age:20,
+  getname:function(){
+    return this.name;
+  },
+  address:{
+   city:'pune',
+   country:'india'
+  }
+}
+
+let copiedvalue={...originalvalue}
+
+console.log(originalvalue)
+console.log(copiedvalue)
+
+
+copiedvalue={
+  ...copiedvalue,
+  name:'paresh',
+  address:{
+  ...copiedvalue.address,
+  city:'delhi'
+  }
+}
+console.log(originalvalue)
+console.log(copiedvalue)
