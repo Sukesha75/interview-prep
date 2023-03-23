@@ -1,0 +1,53 @@
+//call bind and apply why it comes in existance explain with example
+//in arrow is there is this keyword
+//event bubling and capturing
+//box model
+//event handlers write event handler if get element by document.getelementbyId
+
+
+
+[2:23 PM] Sameer Dixit
+const arr = [10, 12, 15, 21];
+for (var i = 0; i < arr.length; i++) {
+  setTimeout(function() {
+    console.log('Index: ' + i + ', element: ' + arr[i]);
+  }, 1000);
+}
+
+[2:34 PM] Sameer Dixit
+
+function abc(){
+var a=10;
+let b=20;
+const c=30;
+    function getNum(){
+        console.log(a,b,c)
+         a=40;
+         b=50;
+         c=60;
+    }
+getNum()
+console.log(a,b,c)
+}
+
+[2:37 PM] Sameer Dixit
+function abc(){
+var a = 7;
+console.log(a,b); 
+function xyz(){
+b = 5;
+console.log(a,b); 
+}
+xyz();
+}
+abc();
+console.log(a,b);
+
+[2:42 PM] Sameer Dixit
+function createAddition(baseNumber) {
+}  
+var addTen = createAddition(10);
+console.log(addTen(10));// returns 20
+var addTwenty = createAddition(20);
+console.log(addTwenty(10));//returns 30
+
