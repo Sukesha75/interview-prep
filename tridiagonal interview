@@ -51,3 +51,25 @@ console.log(addTen(10));// returns 20
 var addTwenty = createAddition(20);
 console.log(addTwenty(10));//returns 30
 
+
+const getfullname=function(city,profile){
+  console.log(`${this.fname} ${this.lname} and city is ${city} and profile is ${profile}`)
+}
+
+const employee={
+ fname:'sukesha',
+ lname:'shinde'
+}
+
+const cus={
+  fname:'paresh',
+  lname:'patil'
+  }
+  
+getfullname.call(cus,'pune','engineer')
+ 
+ getfullname.apply(cus,['goa','artist'])
+  getfullname.apply(employee,['goa','artist'])
+
+ 
+ 
